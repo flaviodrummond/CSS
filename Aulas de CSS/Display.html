@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <div class="box">
+        Display 1
+    </div>
+    <div class="box box-2">
+        Display 2
+    </div>
+    <div class="box box-3">
+        Display 3
+    </div>
+</body>
+<style>
+    .box{
+        background: chartreuse;
+        height: 80px;
+        width: 100px;
+        margin: 20px;
+        padding: 25px;
+        box-sizing: border-box;
+        /* display: inline; Display inline coloca tudo um do lado do outro e não dá para definir altura e nem largura */
+        display: inline-block; /* Mistura entre inline e o block, dando poder de denifir altura e largura, mas colocando todos os elementos em linha */
+    }
+
+    .box-2 {
+        background-color: teal;
+    }
+
+    .box-3 {
+        background-color: rgb(139, 0, 19);
+    }
+</style>
+</html>

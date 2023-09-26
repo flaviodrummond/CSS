@@ -1,0 +1,26 @@
+* {
+    background-color: cornflowerblue;
+}
+
+#titulo {
+    color: green;
+    background-color: rgba(255, 255, 0, 0.815);
+    font-weight: bold;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+}
+
+.botao {
+    background-color: chocolate;
+    padding: 6px;
+}
+
+.botao-1 {
+    background-color: springgreen;
+    padding: 6px;
+    border-radius: 10px;
+    border-color: white;
+}

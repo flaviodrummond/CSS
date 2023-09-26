@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade de Medida CSS</title>
+</head>
+
+<!-- Unidade de medidas
+
+Absolutas
+px (pixel)
+in (inches/polegadas)
+cm / mm (centimetro/milimetro)
+
+Relativas 
+% Calcula o tamanho relativo ao pai
+vw (view width) 1vw é 1% da largura da janela do navegador
+vh (view height) 1vh é 1% da altura da janela do nnavegador
+em é uma unidade relativa ao elemento pai
+rem  é uma unidade relativa ao elemento raiz -->
+
+<body class="avo">
+
+    <div class="pai">
+        <h1 class="filho"> Unidade de Medidas</h1>
+    </div>
+    <div class="vs">
+        <div class="largura"> Largura
+            <div class="altura"> Altura </div>
+    </div>   
+
+</body>
+<style>
+    .avo {
+        
+    }
+
+    .pai {
+        font-size: 30px;
+    }
+
+    .filho {
+        font-size: 200%;
+    }
+
+    .vs {
+        font-size: 30px;
+    }
+
+    .largura {
+        width: 80vw;
+        height: 50vh;
+        background-color: chartreuse;
+        color: tomato;
+        font-size: 2em;
+    }
+
+    .altura {
+        width: 50%;
+        height: 50%;
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+    }
+</style>
+</html>

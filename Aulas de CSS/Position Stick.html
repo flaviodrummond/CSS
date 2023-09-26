@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho"></div>
+    </div>
+    <div class="filha"></div>
+    
+</body>
+<!-- Position Stick -  Age como um adesivo, fixa o elemento só onde eu determinar -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 200vh;
+        width: 200vw;
+    }
+
+    .pai {
+        height: 350px;
+        width: 350px;
+        background-color: lawngreen;
+        position: sticky;
+        top: 250px;
+        left: 500px;  
+        }
+
+    .filho {
+        height: 150px;
+        width: 150px;
+        background-color: yellow;
+    }
+
+.filha {
+    height: 150px;
+    width: 150px;
+    background-color: slateblue;
+}
+
+</style>
+</html>

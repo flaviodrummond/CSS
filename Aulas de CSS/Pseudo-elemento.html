@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elemento</title>
+</head>
+<body>
+    <h1>Pseudo Elemento</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam atque porro rerum tempore et cum optio eum maxime? Maxime fuga libero vitae optio eaque nulla culpa porro omnis dolores!</p>
+</body>
+<style>
+    h1::first-letter {
+        color: red;
+    }
+
+    p::first-line {
+        color: blue;
+        font-size: 20px;
+    }
+
+    h1::before {
+        content: "➞";
+    }
+
+    h1::after {
+        content: "🤫";
+    }
+</style>
+</html>

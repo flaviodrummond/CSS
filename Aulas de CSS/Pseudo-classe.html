@@ -1,0 +1,125 @@
+<!-- Pseudo Classes
+:active - quando o elemento está ativo, ou seja, está pressionado
+:visited - seleciona o link que foi visitado
+:houver - quando o mouse passa por cima do elemento
+:checked - usado em radio / checkbox / select
+:disabled - elemento desabilitado / button / input
+:enabled - elemento está habilitado
+:focus - é aplicada quando o elemento recebe foco, o que pode ocorrer quando o usuárioseleciona o elemento
+:read-only - seleciona input ou texto que são apenas leitura
+:empty - elemento não tem filho
+
+
+:first-child - primeiro filho / ex: primeira Li de uma Ul / primeiro span de uma div
+:first-of-type - primeiro elemento de seu tipo entre os filhos de seu elemento pai
+:last-child - ultimo filho
+:last-of-type - último elemento de seu tipo entre os filhos de seu elemento pai
+:not() - estiliza o elemento, exceto o que está denttro do ()
+:nth-child() - seleciona o elemento baseado na sua posição. Ex: :nth-child(3)
+:nth-last-child() - seleciona o lemento baseado na sua posição, contando de trás para frente -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classe</title>
+</head>
+<body>
+    <a href="#" class="active">Pseudo Classe Active</a>
+    <br>
+    <a href="#" class="visited">Pseudo Classe Visited</a>
+    <br>
+    <a href="#" class="hover">Pseudo Classe Hover</a>
+    <br>
+    <input type="checkbox">
+    <br>
+    <input type="checkbox" disabled class="disable">
+    <br>
+    <input class="focus">
+    <br>
+    <br>
+    <input value="Meu input" readonly>
+    <br>
+    <br>
+    <div class="empty"> Essa é minha div </div>
+    <br>
+    <ul>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+        <li>Quarto</li>
+        <li>Quinto</li>
+        <li>Sexto</li>
+    </ul>
+<br>
+<div>
+    <span>Olá</span>
+    <span>Hey</span>
+    <p>How</p>
+    <p>Let's Go</p>
+    <p>Vamos que vamos</p>
+</div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 30px;
+    }
+
+    .active:active {
+        color: red;
+        
+    }
+
+    .visited:visited {
+        color: rgb(43, 226, 52);
+    }
+
+    .hover:hover {
+        color: orange;
+    }
+
+    input:checked {
+        width: 50px;
+        height: 50px;
+    }
+
+    .disable:disabled {
+        width: 50px;
+        height: 50px;
+    }
+
+    .focus:focus {
+        border: 3px solid rgb(106, 0, 128);
+        outline: none;
+    }
+
+    .empty { /* Quando estiver algo escrito dentro, ficará desta cor */
+        width: 150px;
+        height: 150px;
+        background-color: orange;
+
+    }
+
+    .empty:empty { /* Quando não estiver nada escrito dentro, ficará desta cor */
+        background-color: cornflowerblue;
+    }
+
+    li:first-child {
+        color: navy;
+    }
+
+    span:first-of-type {
+        color: springgreen;
+    }   
+    
+    li:last-child {
+        font-size: 16px;
+        color: red;
+    }
+</style>
+</html>
